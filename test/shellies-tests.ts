@@ -1,4 +1,4 @@
-import shellies = require('../index');
+import shellies = require('shellies');
 
 // Events
 shellies.on('discover', (device, isUnknown) => {
@@ -73,6 +73,7 @@ shellies.Coap.requestStatusUpdates(msg => msg.payload, 1000);
 shellies.Coap.getStatus('1.2.3.4').then(m => m.validFor);
 shellies.request.get('http://host/status').query({ a: 1 });
 
-import shellies2 from '../index';
+import shellies2 from 'shellies';
 const typed = shellies2.getDevice('SHSW-25', 'x') as shellies2.Shelly25;
 typed.rollerPosition.toFixed();
+

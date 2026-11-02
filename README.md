@@ -14,16 +14,20 @@ helpers, `StatusUpdatesListener`, and all 40 supported device models.
 npm install shellies shellies-types
 ```
 
-Map the `shellies` module to these types in `tsconfig.json`:
+Make TypeScript load the types by listing the package in `tsconfig.json`
+(this registers the `shellies` module declaration):
 
 ```json
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "paths": { "shellies": ["node_modules/shellies-types/index.d.ts"] }
+    "types": ["node", "shellies-types"]
   }
 }
 ```
+
+Alternatively, add `/// <reference types="shellies-types" />` to any file in
+your project.
 
 ```ts
 import shellies from 'shellies'

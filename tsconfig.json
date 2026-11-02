@@ -8,7 +8,9 @@
     "noEmit": true,
     "esModuleInterop": true,
     "skipLibCheck": false,
-    "types": ["node"]
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": { "shellies-types/*": ["./*"] }
   },
-  "files": ["index.d.ts", "test/shellies-tests.ts"]
+  "files": ["index.d.ts", "shellies.d.ts", "test/shellies-tests.ts"]
 }

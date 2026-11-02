@@ -4,7 +4,8 @@
   "description": "TypeScript type definitions for node-shellies (https://github.com/alexryd/node-shellies)",
   "types": "index.d.ts",
   "files": [
-    "index.d.ts"
+    "index.d.ts",
+    "shellies.d.ts"
   ],
   "scripts": {
     "test": "tsc -p tsconfig.json"
