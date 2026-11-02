@@ -1,0 +1,36 @@
+{
+  "name": "shellies-types",
+  "version": "1.7.0",
+  "description": "TypeScript type definitions for node-shellies (https://github.com/alexryd/node-shellies)",
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "shelly",
+    "shellies",
+    "typescript",
+    "types"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juhokki/shellies-types.git"
+  },
+  "dependencies": {
+    "@types/superagent": "^8.1.9",
+    "coap": "^1.2.2",
+    "eventemitter3": "^5.0.0"
+  },
+  "peerDependencies": {
+    "shellies": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
+
